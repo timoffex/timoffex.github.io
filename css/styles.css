@@ -1,0 +1,34 @@
+:root {
+    --color-bg: #e3bf99;
+    --color-fg: #202b6b;
+    --color-fg-lighter: color-mix(
+        in srgb,
+        var(--color-fg) 70%,
+        var(--color-bg)
+    );
+
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-fg);
+    background-color: var(--color-bg);
+}
+
+main {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: "Inria Serif", serif;
+    font-size: 1.6em;
+}
+
+.title__name {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.title__date {
+    color: var(--color-fg-lighter);
+    font-size: 0.6em;
+}
