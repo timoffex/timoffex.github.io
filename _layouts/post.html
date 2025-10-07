@@ -8,8 +8,9 @@ layout: default
         <div class="title__date">
             {{ page.date | date_to_string }}
             &nbsp;&bull;&nbsp;
-            Timofey Peshin
+            {{ site.author.name }}
         </div>
     </div>
     <div class="post-content">{{ content }}</div>
 </article>
+<div class="footer"></div>

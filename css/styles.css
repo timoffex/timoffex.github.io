@@ -1,3 +1,6 @@
+---
+---
+
 :root {
     --color-bg: #ffebd7; /* e3bf99 */
     --color-fg: #2a86d9; /* 202b6b */
@@ -43,6 +46,14 @@ main {
 .home-link__img {
     display: block;
     width: 100%;
+}
+
+.footer {
+    height: 5rem;
+
+    background-size: 5rem 5rem;
+    background-repeat: repeat;
+    background-image: url("{% link assets/checker.svg %}");
 }
 
 .title {
