@@ -44,7 +44,7 @@ main {
     font-size: 0.6em;
 }
 
-.post {
+.post-content {
     color: var(--color-fg-post);
     background-color: var(--color-bg-post);
     border-radius: 20px;
@@ -59,7 +59,7 @@ main {
     margin: 1em 0;
 }
 
-.post p {
+.post-content p {
     /* This is the browser default, here for clarity. */
     margin: 1em 0;
 }
