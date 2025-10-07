@@ -10,12 +10,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <nav>
+            <a class="home-link" href="/">
+                <img class="home-link__img" src="{% link assets/TimasTime.svg %}">
+            </a>
+        </nav>
         <main>
             <div class="title">
                 <h1 class="title__name">{{ page.title }}</h1>
                 {% if page.date %}
                     <div class="title__date">
-                        {{ page.date | date_to_string }}, Timofey Peshin
+                        {{ page.date | date_to_string }}
+                        &nbsp;&bull;&nbsp;
+                        Timofey Peshin
                     </div>
                 {% endif %}
             </div>
