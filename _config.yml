@@ -3,4 +3,7 @@ author:
   name: Timofey Peshin
   url: https://timoffex.github.io/
 description: timoffex's incomplete personal blog
-url: "https://timoffex.github.io"
+url: https://timoffex.github.io/
+
+plugins:
+  - jekyll-seo-tag
