@@ -15,6 +15,21 @@
     background-color: var(--color-bg);
 }
 
+body {
+    /*
+     * Remove the side margins and add them manually so that background
+     * colors for sections (specifically post-content) reach the page
+     * edges.
+     */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.body-margin {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 main {
     max-width: 40em;
     margin: 0 auto;
@@ -52,14 +67,14 @@ main {
     /*
      * If we set the top/bottom padding to 0, the p element margins collapse and
      * there is no space at the top and bottom of the post element. But if we
-     * set it to 1em, then the p element margins don't collapse and increase
+     * set it to 16px, then the p element margins don't collapse and increase
      * the space too much.
      */
-    padding: 1px 1em;
-    margin: 1em 0;
+    padding: 1px 16px;
+    margin: 16px 0;
 }
 
 .post-content p {
     /* This is the browser default, here for clarity. */
-    margin: 1em 0;
+    margin: 16px 0;
 }
