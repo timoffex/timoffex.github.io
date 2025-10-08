@@ -16,6 +16,20 @@
     font-size: 1.2rem;
     color: var(--color-fg);
     background-color: var(--color-bg);
+
+    /*
+     * Prevent text from getting scaled up in landscape mode on phones
+     * (in particular using Safari on iOS).
+     *
+     * Draft spec for text-size-adjust: https://drafts.csswg.org/css-size-adjust/#text-size-adjust
+     * Nice blog post about it: https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
+     *
+     * Some people report that setting this prevents zooming, but I don't
+     * really see why it would.
+     */
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 body {
