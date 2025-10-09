@@ -87,6 +87,7 @@ main {
 .post-content {
     color: var(--color-fg-post);
     background-color: var(--color-bg-post);
+    border: 1px solid var(--color-fg);
     border-radius: 20px;
 
     /*
